@@ -1,7 +1,6 @@
 package com.codercamp.showipusingmvp.viewModel;
 
-import android.arch.lifecycle.LiveData;
-
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.codercamp.showipusingmvp.helper.DataResource;
