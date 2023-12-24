@@ -45,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
                 switch (serverResponse.getStatus()) {
                     case SUCCESS:
                         progressDialog.dismiss();
-                        binding.ipAddress.setText(String.valueOf("IP Address " + serverResponse.getActualData().getIp()));
+                        binding.ipAddress.setText(String.valueOf("IP Address : " + serverResponse.getActualData().getIp()));
                         binding.ipAddressDecimal.setText(String.valueOf("IP Address Decimal " + serverResponse.getActualData().getIpDecimal()));
-                        binding.country.setText("Country " + serverResponse.getActualData().getCountry());
-                        binding.isoCode.setText("Country Iso " + serverResponse.getActualData().getCountryIso());
-                        binding.isoCode.setText(String.valueOf("Latitude " + serverResponse.getActualData().getLatitude()));
-                        binding.timeZone.setText(String.valueOf("Longitude " + serverResponse.getActualData().getLongitude()));
-                        binding.timeZone.setText("Time Zone " + serverResponse.getActualData().getTimeZone());
+                        binding.country.setText("Country : " + serverResponse.getActualData().getCountry());
+                        binding.isoCode.setText("Country Iso : " + serverResponse.getActualData().getCountryIso());
+                        binding.latitude.setText(String.valueOf("Latitude : " + serverResponse.getActualData().getLatitude()));
+                        binding.longitude.setText(String.valueOf("Longitude : " + serverResponse.getActualData().getLongitude()));
+                        binding.timeZone.setText("Time Zone : " + serverResponse.getActualData().getTimeZone());
 
                         break;
                     case ERROR:
